@@ -1,59 +1,37 @@
-// asynchronous X synchronous
-// top to bottom
-// function add(a, b) {
-//     a++;
-//     b++;
+// !Synchronous function to add two numbers
+function add(a, b) {
+    a++;
+    b++;
 
-//     var c = a + b;
+    var c = a + b;
 
-//     return c;
-// }
-
-// const res = add(10, 20);
-// console.log(res);
-
-function fn() {
-    console.log('fn executed');
+    return c;
 }
 
-// simulates delay
-// db 
-// webservice
-// timers
-// file
-// setTimeout(fn, 2000); // 1000ms = 1sec
-// setInterval(fn, 1000);
+const res = add(10, 20);
+console.log(res); // ? Output: 32
 
-// tailor
-// 10 days
-// typeof NaN 
-// typeof null - Object
-// single threaded
-// non blocking
+
+// !Asynchronous function to add two numbers with a delay
+// !Simulates an asynchronous operation like database query or web service call
+
 function addAsync(a, b, cb) {
-    console.log('execution started');
+    console.log('Execution started');
 
-    // select * from persons
-    // 3mns page blocked
     setTimeout(function () {
         a++;
         b++;
         var c = a + b;
-        console.log('processed result');
-        cb(c); // callback
+        console.log('Processed result');
+        cb(c);
     }, 2000);
 
-    console.log('execution completed');
+    console.log('Execution completed');
     return undefined;
 }
 
-
-
-// entity 2
-// You
-// verbs
 function callback(res) {
-    console.log('callback', res);
+    console.log('Callback:', res);
 }
 
 addAsync(10, 20, callback);

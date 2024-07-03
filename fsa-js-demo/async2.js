@@ -1,23 +1,19 @@
-function addAsync(a, b, cb) {
 
+
+function subtractAsync(a, b, cb) {
     setTimeout(() => {
-        if (a === 0) cb("Invalid input");
-        else {
-            a++;
-            b++;
-            var c = a + b;
-            cb(null, c);
+        if (a === 0) {
+            cb("Invalid input");
+        } else {
+            a--;
+            b--;
+            var result = a - b;
+            cb(null, result);
         }
     }, 2000);
 }
 
-
-// select * from persons
-// nodejs first param: err, second param: res/data
-// async js = 80% nodejs
-// callbacks
-function callback(err, res) {
-    // deduct
+function handleResult(err, res) {
     if (err) {
         console.log(err);
     } else {
@@ -25,4 +21,4 @@ function callback(err, res) {
     }
 }
 
-addAsync(10, 20, callback);
+subtractAsync(20, 10, handleResult);

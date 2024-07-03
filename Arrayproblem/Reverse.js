@@ -18,9 +18,9 @@
 
 //  reversed [batfa]
 
-function reverseStringz() {
+function reverseString() {
 
-  const reversearr = ['a', 'f', 't', 'a', 'b'];
+  const reversearr = ["Hello, World!"];
   let reversed = '';
 
   for (let i = reversearr.length - 1; i >= 0; i--) {
@@ -32,5 +32,6 @@ function reverseStringz() {
 }
 
 const reversedString = reverseString();
+
 console.log(reversedString);
 
