@@ -69,7 +69,7 @@
 // console.log(isPalindrome("Abba"));
 
 
-// arrow function
+//! arrow function
 
 const checkPalindrome = str => {
 

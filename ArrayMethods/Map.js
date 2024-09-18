@@ -7,9 +7,16 @@ console.log("Double the Numbers:", doubledNumbers);  // Output: [2, 4, 6, 8, 10]
 
 // Extract Names from Objects:
 
-let persons = [{ name: 'Alice' }, { name: 'Bob' }, { name: 'Charlie' }];
-let names = persons.map(person => person.name);
-console.log("Extract Names from Objects:", names);  // Output: ['Alice', 'Bob', 'Charlie']
+const persons = [
+    { name: "Aftab", age: 40 },
+    { name: "Sahil", age: 20 },
+    { name: "Aman", age: 33 },
+
+]
+
+const Name = persons.map((person) => `${person.name} ${person.age}`)
+
+console.log(Name)
 
 
 // Capitalize First Letter of Strings:

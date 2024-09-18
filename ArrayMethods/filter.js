@@ -1,4 +1,4 @@
-// 1) Given an array of numbers, return a new array that has only the numbers that are 5 or greater.
+// ! 1) Given an array of numbers, return a new array that has only the numbers that are 5 or greater.
 
 // let farr = [4, 5, 6, 7, 8];
 // let newfarr = farr.filter(function (greater) {
@@ -19,7 +19,7 @@
 
 
 
-// 2) Given an array of numbers, return a new array that only includes the even numbers.
+//! 2) Given an array of numbers, return a new array that only includes the even numbers.
 
 // let arr = [4, 5, 6, 7, 8];
 // let newArr = arr.filter(function (even) {
@@ -27,14 +27,14 @@
 // })
 // console.log(newArr);
 
-// with Arrow functions
+// ?with Arrow functions
 
 // let arr = [4, 5, 6, 7, 8];
 // let newArr = arr.filter((even) => even % 2 == 0);
 
 // console.log(newArr);
 
-// 3) Given an array of strings, return a new array that only includes those that are 5 characters or fewer in length
+// ! 3) Given an array of strings, return a new array that only includes those that are 5 characters or fewer in length
 
 // let arrLen = ["Aftab", "Azim", "AfnanDanish", "Sahil", "AshishSharma"];
 // let newarrlen = arrLen.filter(function (len) {
@@ -42,7 +42,7 @@
 // })
 // console.log(newarrlen)
 
-// with Arrow functions
+// ? with Arrow functions
 
 // let arrLen = ["Aftab", "Azim", "AfnanDanish", "Sahil", "AshishSharma"];
 
@@ -51,7 +51,7 @@
 // console.log(newarrlen);
 
 
-// Array Method Using Arrow Function
+// !Array Method Using Arrow Function
 
 // let Number = [50, 45, 66, 30, 10, 20, 70]
 
