@@ -83,7 +83,6 @@ const checkPalindrome = str => {
     }
 };
 
-
 checkPalindrome("Abba");
 checkPalindrome("hello");
 checkPalindrome("Madam");

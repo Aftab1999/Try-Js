@@ -16,6 +16,8 @@ const persons = [
 
 const Name = persons.map((person) => `${person.name} ${person.age}`)
 
+const Aftab = persons.map((person) => `${person.name} ${person.age}`)
+
 console.log(Name)
 
 
