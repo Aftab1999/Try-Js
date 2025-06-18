@@ -26,6 +26,9 @@
 // console.log(checkProgram());
 
 
+//!---------------------------------------------!//
+
+
 // with Different Approch 
 
 
@@ -49,6 +52,8 @@
 
 // checkProgram();
 
+//!---------------------------------------------!//
+
 
 // with Inbuild Function
 
@@ -68,25 +73,55 @@
 
 // console.log(isPalindrome("Abba"));
 
+//!---------------------------------------------!//
 
-//! arrow function
 
-const checkPalindrome = str => {
+//? arrow function
 
+// const checkPalindrome = str => {
+
+//     str = str.toLowerCase();
+
+//     let reversed = str.split('').reverse().join('');
+
+//     if (str === reversed) {
+//         console.log(`"${str}" is a palindrome.`);
+//     } else {
+//         console.log(`"${str}" is not a palindrome.`);
+//     }
+// };
+
+// checkPalindrome("Abba");
+// checkPalindrome("hello");
+// checkPalindrome("Madam");
+// checkPalindrome("racecar");
+
+//!---------------------------------------------!//
+
+//? with rever using using array methods function
+
+function Palindrom(str) {
     str = str.toLowerCase();
-    let reversed = str.split('').reverse().join('');
+
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
 
     if (str === reversed) {
-        console.log(`"${str}" is a palindrome.`);
+        console.log(`"${str}" is a palindrome`);
     } else {
-        console.log(`"${str}" is not a palindrome.`);
+        console.log(`"${str}" is not a palindrome`);
     }
-};
+}
 
-checkPalindrome("Abba");
-checkPalindrome("hello");
-checkPalindrome("Madam");
-checkPalindrome("racecar");
+// Example usage:
+Palindrom("Madam");
+Palindrom("Hello");
+
+
+
+
 
 
 

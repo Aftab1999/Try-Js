@@ -12,16 +12,6 @@
 
 // Reverse('aftab');
 
-// take one empty string
-
-//  A f t a b
-//          i
-
-// contaticate i into reverse
-
-
-//  console the reverse
-
 //!-------------------------//!
 
 
