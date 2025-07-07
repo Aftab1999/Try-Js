@@ -120,6 +120,25 @@ Palindrom("Madam");
 Palindrom("Hello");
 
 
+// ?Step-by-step for str = "Madam"
+
+// +-------+-------------+----------------+--------------------------+
+// | Step  | str[i]      | reversed so far| i                        |
+// +-------+-------------+----------------+--------------------------+
+// | Init  |             | ""             | i = 4 to 0 (reverse loop)|
+// | 1     | m           | "m"            | i = 4                    |
+// | 2     | a           | "ma"           | i = 3                    |
+// | 3     | d           | "mad"          | i = 2                    |
+// | 4     | a           | "mada"         | i = 1                    |
+// | 5     | m           | "madam"        | i = 0                    |
+// +-------+-------------+----------------+--------------------------+
+
+// Original str (lowercased): "madam"  
+// Reversed string: "madam"  
+// ✅ Result: ✅ "madam" is a palindrome
+
+
+
 
 
 
