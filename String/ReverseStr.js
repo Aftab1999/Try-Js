@@ -22,7 +22,7 @@
 
 function reverseString() {
 
-  const reverseArr =  [1,2,3,4,5,6,7,8,9,10];
+  const reverseArr =  ["h", "e", "l", "l", "o"];
   let left = 0;
   let right = reverseArr.length - 1;
 

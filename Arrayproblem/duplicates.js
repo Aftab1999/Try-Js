@@ -44,20 +44,78 @@
 
 // !-----------------------------------------------------------------------------------------------------------//
 
+//? remove duplicate element and print uniqe element 
+
+// const removeDuplicates = (arr) => {
+
+//     const uniqueArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!uniqueArr.includes(arr[i])) {
+//             uniqueArr.push(arr[i]);
+//         }
+//     }
+
+//     return uniqueArr;
+// };
+
+// const inputArray = [1, 2, 2, 3, 4, 4, 5, 7, 7, 8, 8, 9, 9];
+
+// const result = removeDuplicates(inputArray);
+
+// console.log(result)
+
+// !--------------------------------------------------------------------------!//
+
+// ? print duplicate element 
 
 const removeDuplicates = (arr) => {
 
-    const uniqueArr = [];
+    // const uniqueArr = [];
+
+    const duplicates = [];
+    const seen = [];
+
     for (let i = 0; i < arr.length; i++) {
-        if (!uniqueArr.includes(arr[i])) {
-            uniqueArr.push(arr[i]);
+        
+        if(seen.includes(arr[i])){
+            if(!duplicates.includes(arr[i])){
+                duplicates.push(arr[i]);
+            }
+        } else {
+            seen.push(arr[i]);
         }
+      
     }
 
-    return uniqueArr;
+    return duplicates;
 };
 
 const inputArray = [1, 2, 2, 3, 4, 4, 5, 7, 7, 8, 8, 9, 9];
 
 const result = removeDuplicates(inputArray);
+
+console.log(result);
+
+//!---------------------------------------------//
+
+//? Step-by-Step Diagram
+//? Let’s use your input:
+//? arr = [1, 2, 2, 3, 4, 4, 5, 7, 7, 8, 8, 9, 9]
+
+// | Index | Value | seen before? | Add to duplicates? | seen after | duplicates after |
+// |-------|-------|-------------|--------------------|------------|------------------|
+// | 0     | 1     | No          | No                 | [1]        | []               |
+// | 1     | 2     | No          | No                 | [1,2]      | []               |
+// | 2     | 2     | Yes         | Yes                | [1,2]      | [2]              |
+// | 3     | 3     | No          | No                 | [1,2,3]    | [2]              |
+// | 4     | 4     | No          | No                 | [1,2,3,4]  | [2]              |
+// | 5     | 4     | Yes         | Yes                | [1,2,3,4]  | [2,4]            |
+// | 6     | 5     | No          | No                 | [1,2,3,4,5]| [2,4]            |
+// | 7     | 7     | No          | No                 | [1,2,3,4,5,7]| [2,4]          |
+// | 8     | 7     | Yes         | Yes                | [1,2,3,4,5,7]| [2,4,7]        |
+// | 9     | 8     | No          | No                 | [1,2,3,4,5,7,8]| [2,4,7]      |
+// | 10    | 8     | Yes         | Yes                | [1,2,3,4,5,7,8]| [2,4,7,8]    |
+// | 11    | 9     | No          | No                 | [1,2,3,4,5,7,8,9]| [2,4,7,8]  |
+// | 12    | 9     | Yes         | Yes                | [1,2,3,4,5,7,8,9]| [2,4,7,8,9]|
+
 
