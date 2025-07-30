@@ -68,7 +68,7 @@ try {
 
 // ? gives an error because let val is hoisted but not initialized, so you can't use it before its line.
 
-} catch (e) {
+} catch (e) { 
     console.log("let error:", e.message);
 }
 let val = 20;
