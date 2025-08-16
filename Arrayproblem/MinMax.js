@@ -5,10 +5,10 @@
 // Console log the min and max
 
 
-const a = [58, 16, 23, 37, 38, 39, 44, 45, 46];
+const a = [58, 16, 23, 37, 38, 39, 44, 45, 46 -1];
 
-let min = a[0];
-let max = a[0];
+let min = -Infinity;
+let max = -Infinity;
 
 for (let i = 0; i < a.length; i++) {
 

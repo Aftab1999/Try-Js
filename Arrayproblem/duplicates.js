@@ -49,7 +49,9 @@
 // const removeDuplicates = (arr) => {
 
 //     const uniqueArr = [];
+
 //     for (let i = 0; i < arr.length; i++) {
+        
 //         if (!uniqueArr.includes(arr[i])) {
 //             uniqueArr.push(arr[i]);
 //         }
@@ -70,10 +72,8 @@
 
 const removeDuplicates = (arr) => {
 
-    // const uniqueArr = [];
-
     const duplicates = [];
-    const seen = [];
+    const seen = []; // 1
 
     for (let i = 0; i < arr.length; i++) {
         

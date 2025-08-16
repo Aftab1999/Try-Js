@@ -113,6 +113,8 @@ function Palindrom(str) {
     } else {
         console.log(`"${str}" is not a palindrome`);
     }
+
+ 
 }
 
 // Example usage:
