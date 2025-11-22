@@ -73,7 +73,7 @@
 const removeDuplicates = (arr) => {
 
     const duplicates = [];
-    const seen = []; // 1
+    const seen = []; // 1 2 2
 
     for (let i = 0; i < arr.length; i++) {
         

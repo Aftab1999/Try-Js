@@ -24,7 +24,8 @@ for(let i = 0; i<arr.length; i++){
 
 }
 
-const numbers = [1, 1, 6, 6, 6, 4, 4, 4, 9, 9, 9, 9];
+// const numbers = [1, 1, 6, 6, 6, 4, 4, 4, 9, 9, 9, 9];
+const numbers = [6,4,4,4,7,2,1,7,9];
 findLeastFrequent(numbers);
 
 

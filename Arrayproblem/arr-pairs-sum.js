@@ -16,7 +16,7 @@ function countPairs(arr, target) {
 }
 
 
-const arr = [1, 5, 7, -1, 5];
+const arr = [1, 5, 7, 1, 5]; // 4
 const target = 6;
 
 console.log("Total pairs:", countPairs(arr, target)); 

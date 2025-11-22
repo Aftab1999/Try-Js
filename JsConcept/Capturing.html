@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Capturing Example</title>
+</head>
+<body>
+  <div id="parent" style="padding:20px; border:2px solid red;">
+    Parent Div
+    <button id="child">Click Me</button>
+  </div>
+
+  <script>
+    // Capturing phase: third argument = true
+    document.getElementById("parent").addEventListener("click", () => {
+      console.log("Parent Captured");
+    }, true);
+
+    document.getElementById("child").addEventListener("click", () => {
+      console.log("Child Captured");
+    }, true);
+  </script>
+</body>
+</html>
